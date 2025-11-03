@@ -1,0 +1,5 @@
+{
+  "name": "Football Predictions",
+  "description": "A web application to display daily football match predictions with affiliate links, styled after a popular betting site but with a modern, dark theme.",
+  "requestFramePermissions": []
+}
