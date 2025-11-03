@@ -1,16 +1,20 @@
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from "react";
+import { createRoot } from "react-dom";
 
-const rootElement = document.getElementById('root');
-if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
+function App() {
+  return (
+    <div className="text-center">
+      <h1 className="text-4xl font-bold mb-4 text-green-400">
+        ⚽ Football Predictions
+      </h1>
+      <p className="text-lg text-gray-300">
+        Welcome! This page is running React + Tailwind on GitHub Pages.
+      </p>
+    </div>
+  );
 }
 
-const root = ReactDOM.createRoot(rootElement);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const root = createRoot(document.getElementById("root"));
+root.render(<App />);
+
